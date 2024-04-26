@@ -1,10 +1,12 @@
 import './App.css';
 import Navigation from './components/navigation/Navigation';
-
+import Routing from './components/partials/Routing';
 
 function App() {
-  return (
+  return (<>
 <Navigation />
+<Routing />
+</>
   );
 }
 
