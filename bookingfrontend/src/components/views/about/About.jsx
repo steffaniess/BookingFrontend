@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return(
-        <div>
+        <div style>
             <h2>Our Story</h2>
             <p>FellowBot was born in Stockholm, Sweden, as a spinoff from the Royal Institute of Technology (KTH), 2017.
             Who are we?
