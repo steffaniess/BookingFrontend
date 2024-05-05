@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import BookingForm from './BookingForm';
+import './Booking.css';
 
 const Booking = () => {
     // State för att hålla formulärdata
@@ -31,15 +32,17 @@ const Booking = () => {
     };
 
     return (
-        <div>
-            <h2>FellowBots Simulator Booking</h2>
-            <p>The future of driving licenses</p>
+        <div className="booking-container">
+            <h2 className="booking-header">FellowBots Simulator Booking</h2>
+            <p className="booking-description">The future of driving licenses</p>
             {/* Bokningsformulär */}
-            <BookingForm
-                bookingData={bookingData}
-                onInputChange={handleInputChange}
-                onBookingSubmit={handleBookingSubmit}
-            />
+            <div className="booking-form">
+                <BookingForm
+                    bookingData={bookingData}
+                    onInputChange={handleInputChange}
+                    onBookingSubmit={handleBookingSubmit}
+                />
+            </div>
         </div>
     );
 };

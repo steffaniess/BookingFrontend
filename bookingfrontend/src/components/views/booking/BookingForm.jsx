@@ -1,4 +1,5 @@
 import React from 'react';
+import './Booking.css';
 
 const BookingForm = ({ bookingData, onInputChange, onBookingSubmit }) => {
     return (

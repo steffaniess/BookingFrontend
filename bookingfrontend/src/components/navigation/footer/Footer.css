@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center; /* Centrerar innehållet horisontellt */
   padding: 20px 0; /* Justera padding efter behov */
+  height: 100px;
 }
 
 .social-icons {

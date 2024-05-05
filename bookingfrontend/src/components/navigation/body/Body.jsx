@@ -1,21 +1,16 @@
-// Import React and CSS 
+// Body.jsx
 import React from "react"; 
-import "./Body.css";
-
-// Import child components
+import "./Body.css"; // Importera CSS för body-styling här
 import Footer from "../footer/Footer";
 import Home from "../../views/home/Home";
 import About from "../../views/about/About";
 import Booking from "../../views/booking/Booking";
 import Contact from "../../views/contact/Contact";
 
-// Body component to render different page content  
-const Body = ({page}) => {
-
-  // Determine which page content to render
+const Body = ({ page }) => {
   let content;
 
-  if(page  === 'home') {
+  if (page === 'home') {
     content = <Home />;
 
   } else if (page === 'about') {
@@ -28,12 +23,9 @@ const Body = ({page}) => {
     content = <Contact />;
   }
 
-  // Render page content and footer 
   return (
-    <div className="home">   
-      <Body>
-        {content} 
-      </Body>
+    <div className="body-container">   
+      {content} 
       <Footer />
     </div>
   );
