@@ -7,6 +7,24 @@
   pointer-events: none;
 }
 
+/* App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation {
+  margin-top: 20px; /* Justera detta värde för det avstånd du önskar */
+}
+
+.home {
+  margin-top: 20px; /* Justera detta värde för det avstånd du önskar */
+}
+
+/* Stilar för header, navigation, footer etc. */
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
